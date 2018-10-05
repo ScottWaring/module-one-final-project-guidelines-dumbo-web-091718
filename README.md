@@ -16,11 +16,14 @@ Movie Guide returns the title, director, release date, rating and description of
 
 The streaming sources information and the general movie information are saved to a text file on each iteration with our goal being to email that information to the user.
 
-The email function works by instantiating a new text file on each iteration and and using a command line execution to send the user an email with that iteration of the text file from their own local computer. This was tested on a mac and may not have full functionality on a pc. 
+The email function works by instantiating a new text file on each iteration and and using a command line execution to send the user an email with that iteration of the text file from their own local computer. This was tested on a mac and may not have full functionality on a pc.
 ​
+ruby bin/run.rb Is the file to run from command line to use our program.
+
+
 Important notes:
 ​
--Our program runs on an API authorized key from "api.guidebox.com." if you are unable to access the API, the authorized key has either exhausted all of its provided uses or the key has expired. Please contact api.guidebox.com for a new key for use of the program and replace your new key on line 6 in the file "api_class.rb"
+-Our program runs on an API authorized key from "api.guidebox.com." if you are unable to access the API, the authorized key has either exhausted all of its provided uses or the key has expired. Please contact api.guidebox.com for a new key for use of the program and replace your new key on line 6 in the file "api_class.rb" where it says "guidebox api key".
 ​
 -Program is also dependent on a database that must be instantiated before use. You will need to call on "rake db:migrate" in order to create a fresh database.
 ​
